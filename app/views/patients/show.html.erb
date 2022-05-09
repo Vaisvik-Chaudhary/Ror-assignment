@@ -1,0 +1,24 @@
+<div class="container ">
+<h2 class="header mx-auto my-3 "><%=@patient.name%> Information</h2>
+<hr>
+<div class="card" style="width: 23rem;">
+<p style="color: green"><%= notice %></p>
+
+<%= render @patient %>
+
+
+
+<div>
+<div class="btn btn-outline-dark">
+  <%= link_to "Edit", edit_patient_path(@patient) %> 
+  </div> 
+
+   <div class="btn btn-outline-dark">
+  <%= link_to "Back", patients_path %> </div>
+</div>
+</div>
+
+<hr>
+<%= button_to "Delete", @patient, method: :delete %>
+
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+<h1 class="my-3">Editing patient</h1>
+<hr>
+<%= render "form", patient: @patient %>
+
+<br>
+
+
+
+<div class="btn btn-outline-dark">
+  <%= link_to "edit", edit_patient_path(@patient) %> 
+  </div> 
+   <div class="btn btn-outline-dark">
+  <%= link_to "Back", patients_path %> </div>
+</div>
+</div>
+</div>
