@@ -1,0 +1,14 @@
+<div class="container">
+<h1 class="my-3">Editing sector</h1>
+<hr>
+
+<%= render "form", sector: @sector %>
+<div>
+<div class="btn btn-outline-dark">
+  <%= link_to "Edit", edit_sector_path(@sector) %> 
+  </div> 
+   <div class="btn btn-outline-dark">
+  <%= link_to "Back", sectors_path %> </div>
+</div>
+</div>
+</div>
